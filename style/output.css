@@ -794,6 +794,11 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
   .md\:border-l-0 {
     @media (width >= 48rem) {
       border-left-style: var(--tw-border-style);
