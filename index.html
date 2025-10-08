@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezuca | First Tailwind Project</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style/output.css">
+
+</head>
+<body>
+
+    <!-- HEADER TOP AREA  -->
+    <section class="hidden">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <div>
+                    <ul class="flex items-center">
+                        <li><a href="mailto:yeasin108arafat@gmail.com"><i class="material-icons">mail</i>yeasin108arafat@gmail.com</a></li>
+                        <li><a href="tel:+880 1636439612"><i class="material-icons">call</i>+880 1636439612</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <form action="">
+                        <input type="search" placeholder="Search here...">
+                        <button>Search</button>
+                    </form>
+                    <ul>
+                        <li><a href="#">Register/Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- HEADER AREA -->
+    <header class="absolute z-2 w-full bg-white/10 py-6">
+        <div class="container mx-auto px-[15px]">
+            <div class="flex justify-between align-center">
+                <div>
+                    <a href="#" class="text-3xl font-semibold text-white">Edu<span class="text-[#19c880]">ca</span></a>
+                </div>
+                <div class="flex items-center">
+                    <button class="menu-open-button lg:hidden cursor-pointer">
+                        <i class="material-icons text-white">menu</i>
+                    </button>
+                    <div class="menu">
+                        <button class="menu-close-button absolute top-2.5 right-2.5 cursor-pointer">
+                            <i class="material-icons text-[30px]!">cancel</i>
+                        </button>
+                        <ul class="[&>li>a]:text-black p-6 [&>li>a]:uppercase  [&>li>a]:font-medium [&>li]:mb-3 pt-15">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:inline-block">
+                        <ul class="flex [&>li>a]:text-white [&>li>a]:ml-8 [&>li>a]:uppercase [&>li>a]:hover:text-[#19c880] [&>li>a]:font-medium">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Course</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER AREA -->
+    <section class="bg-[url(/img/hero-bg.jpg)] bg-cover bg-center bg-no-repeat overflow-hidden box-border z-1 relative before:absolute before:h-screen before:w-screen before:z-[-1] before:bg-[rgba(21,20,33,.5)] before:top-0 before:left-0">
+        <div class="container mx-auto px-[15px]">
+            <div class="h-screen inline-flex justify-center flex-col items-start">
+                <span class="text-[#19c880] font-semibold uppercase text-sm md:text-md">GET STARTED WITH ONLINE COURSES</span>
+                <h1 class="text-white text-3xl/normal lg:text-5xl/normal font-bold uppercase py-5 pt-2">BEST ONLINE <br> LEARNING SYSTEM</h1>
+                <p class="max-w-2xl text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                <a href="#" class="text-sm text-white border-2 border-[#19c880] inline mt-5 px-6 py-3 uppercase tracking-widest hover:bg-[#19c880] transition duration-300 hover:text-black">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES AREA  -->
+    <section>
+        <div class="contaier mx-auto">
+            <div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 [&>div]:p-5 [&>div]:md:p-10  [&>div]:border-b-1 [&>div]:border-[#ebebeb] [&>div>p]:text-[#757686] [&>div>p]:py-2 [&>div]:border-r-1 [&>div]:last:border-r-0 [&>div>a]:hover:underline [&>div>a]:hover:underline-offset-1 [&>div]:hover:bg-amber-50 [&>div]:transition [&>div]:duration-100">
+                    <div>
+                        <i class="material-icons text-6xl! text-[#19c880]">token</i>
+                        <h6 class="text-xl font-semibold">Learn From The Experts</h6>
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <a href="#" class="uppercase text-[#19c880] tracking-widest font-medium text-sm">Read More</a>
+                    </div>
+                    <div>
+                        <i class="material-icons text-6xl! text-[#19c880]">keyboard_command_key</i>
+                        <h6 class="text-xl font-semibold">Learn Photoshop, Web Design</h6>
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <a href="#" class="uppercase text-[#19c880] tracking-widest font-medium text-sm">Read More</a>
+                    </div>
+                    <div>
+                        <i class="material-icons text-6xl! text-[#19c880]">home</i>
+                        <h6 class="text-xl font-semibold">Latest News & Events</h6>
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <a href="#" class="uppercase text-[#19c880] tracking-widest font-medium text-sm">Read More</a>
+                    </div>
+                    <div>
+                        <i class="material-icons text-6xl! text-[#19c880]">favorite</i>
+                        <h6 class="text-xl font-semibold">Latest News & Events</h6>
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <a href="#" class="uppercase text-[#19c880] tracking-widest font-medium text-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED COURSES  -->
+    <section class="py-[60px] lg:py-[100px]">
+        <div class="container mx-auto px-[15px]">
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold">Featured Course</h2>
+                <a href="#" class="text-sm text-black border-2 border-[#19c880] inline mt-5 px-6 py-3 uppercase tracking-widest hover:bg-[#19c880] transition duration-300 hover:text-black">View All</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- SINGLE COURSE -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 hover:shadow-lg transition duration-200 hover:bg-amber-50">
+                    <div>
+                        <a href="#">
+                            <img src="img/1.jpg" class="w-full h-full object-cover" alt="">
+                        </a>
+                    </div>
+                    <div class="p-7 border-1 md:border-l-0 border-[#ebebeb]">
+                        <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                            <span>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </span> 
+                            (4 Votes)
+                        </p>
+                        <h4 class="text-md font-semibold mt-2 hover:underline"><a href="#">The Complete Android Developer Course</a></h4>
+                        <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">AB Sagor</a> / July 21, 2018</p>
+                        <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                    </div>
+                </div>
+                <!-- SINGLE COURSE -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 hover:shadow-lg transition duration-200 hover:bg-amber-50">
+                    <div>
+                        <a href="#">
+                            <img src="img/2.jpg" class="w-full h-full object-cover" alt="">
+                        </a>
+                    </div>
+                    <div class="p-7 border-1 md:border-l-0 border-[#ebebeb]">
+                        <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                            <span>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star</i>
+                                <i class="material-icons">star_half</i>
+                            </span> 
+                            (4 Votes)
+                        </p>
+                        <h4 class="text-md font-semibold mt-2 hover:underline"><a href="#">Learn Photoshop, Web Design & Profitable</a></h4>
+                        <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                        <h3 class="font-bold text-[#f3a90b] text-2xl">Free</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center md:hidden mt-10">
+                <a href="#" class="border-2 border-amber-300 py-2.5 px-10 uppercase font-semibold tracking-wider">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT AREA -->
+    <section class="bg-[#f7f7f7] py-[50px] lg:py-[100px]">
+        <div class="container mx-auto p-[15px]">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+                <div>
+                    <h2 class="font-bold text-3xl lg:text-4xl">About Ezuca</h2>
+                    <p class="text-md py-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                    <ul class="grid grid-cols-2 gap-5 [&>li>span]:text-3xl [&>li>span]:lg:text-5xl [&>li>span]:text-[#19c880] [&>li>span]:font-semibold [&>li>p]:uppercase [&>li>p]:pt-3 [&>li>p]:text-sm">
+                        <li>
+                            <span>50<sub>M+</sub></span>
+                            <p>Students Learning</p>
+                        </li>
+                        <li>
+                            <span>30<sub>k+</sub></span>
+                            <p>Active Course</p>
+                        </li>
+                        <li>
+                            <span>340<sub>M+</sub></span>
+                            <p>Instructor Online</p>
+                        </li>
+                        <li>
+                            <span>20<sub>+</sub></span>
+                            <p>Country Reached</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="img/video-screenshot.png" class="w-full" alt="">
+                    <a href="#" class="absolute bg-amber-200 top-0 left-0 right-0 bottom-0 w-20 h-20 m-auto rounded-full flex justify-center items-center text-white lg:left-[-40px] lg:right-[unset] shadow-sm hover:rotate-360 transition duration-500">
+                        <i class="material-icons text-4xl!">play_arrow</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-[50px] lg:py-[100px]">
+        <div class="container mx-auto px-[15px]">
+            <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center pb-2 lg:pb-10">
+                <h2 class="font-bold text-3xl lg:text-4xl pb-5 lg:pb-0">Featured Courses</h2>
+                <div class="filter-btns flex gap-3 lg:gap-10 flex-wrap [&>button]:text-sm [&>button]:lg:text-normal [&>button]:cursor-pointer [&>button]:hover:text-[#f3a90b]">
+                    <button type="button" data-filter="all">All</button>
+                    <button type="button" data-filter=".category-a">Design</button>
+                    <button type="button" data-filter=".category-b">Business</button>
+                    <button type="button" data-filter=".category-c">Web</button>
+                    <button type="button" data-filter=".category-d">Photography</button>
+                </div>
+            </div>
+            <div>
+                <div class="all-catagorys grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8 pt-5">
+                    <div class="mix category-a" data-order="1">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/1.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-b" data-order="2">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/2.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-c" data-order="3">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/3.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-a" data-order="4">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/4.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-a" data-order="5">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/5.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-d" data-order="6">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/6.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix category-c" data-order="7">
+                        <div class="transition duration-200 hover:bg-amber-50 hover:shadow-lg">
+                            <div>
+                                <a href="#">
+                                    <img src="img/course/1.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5 border-1 border-t-0 border-[#ebebeb]">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <div class="flex justify-between items-center">
+                                    <h3 class="font-bold text-[#f3a90b] text-2xl">$89</h3>
+                                    <p class="[&>span>i]:text-[14px]! [&>span>i]:tracking-tighter">
+                                        <span>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star</i>
+                                            <i class="material-icons">star_half</i>
+                                        </span> 
+                                        (4 Votes)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LATEST NEWS & EVENTS -->
+    <section class="bg-[#f7f7f7] py-[60px] lg:py-[100px]">
+        <div class="container mx-auto px-[15px]">
+            <div>
+                <h2 class="font-bold text-3xl lg:text-4xl pb-10">Latest News & Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-white">
+                            <div class="relative">
+                                <a href="#"><img src="img/event-1.jpg" class="w-full" alt=""></a>
+                                <h4 class="absolute left-0 bottom-0 bg-amber-300 font-bold py-2 px-5 text-center uppercase"> <span class="text-4xl">23</span> <br>May</h4>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">The Complete Financial Analyst Training & Investing Course</a></h4>
+                                <p class="pb-5">Sure, go ahead, laugh if you want to. I've seen your type before: Flashy, making the scene, flaunting convention. Yeah, I know what you're thinking. What's this guy making such a big stink about old library books? Well, let me give you a hint, junior.</p>
+                                <ul class="flex justify-between items-center text-sm [&>li]:flex [&>li]:items-center [&>li>i]:pr-2 [&>li>i]:text-black [&>li]:text-[#c0c1cd]">
+                                    <li><i class="material-icons">location_on</i> Phulbari, Dinajpur, Bangladesh</li>
+                                    <li class="uppercase"><i class="material-icons">calendar_month</i> 10 DEC - 12 DEC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid gap-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 bg-white">
+                            <div>
+                                <a href="#">
+                                    <img src="img/event-2.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[#c0c1cd] flex items-center pb-5"><i class="material-icons text-black pr-2">calendar_month</i> 10 DEC - 12 DEC</span>
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 bg-white">
+                            <div>
+                                <a href="#">
+                                    <img src="img/event-3.jpg" class="w-full" alt="">
+                                </a>
+                            </div>
+                            <div class="p-5">
+                                <span class="text-[#c0c1cd] flex items-center pb-5"><i class="material-icons text-black pr-2">calendar_month</i> 10 DEC - 12 DEC</span>
+                                <h4 class="text-xl font-semibold mb-3"><a href="#" class="hover:underline">Personalized online learning experience</a></h4>
+                                <p class="text-[16px] pb-5 pt-1.5"><a href="#" class="text-[#19c880] hover:underline">Mr. Yeasin Arafat</a> / July 21, 2018</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="py-[60px] lg:py-[100px]">
+        <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 grid-rows-3 gap-3 [&>div>img]:w-full [&>div>img]:h-full [&>li>img]:object-cover">
+            <div>
+                <img src="img/gallery/1.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/gallery/2.jpg" alt="">
+            </div>
+            <div class="col-span-2 row-span-2">
+                <img src="img/gallery/3.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/gallery/4.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/gallery/5.jpg" alt="">
+            </div>
+            <div class="col-span-2">
+                <img src="img/gallery/6.jpg" alt="">
+            </div>
+            <div class="col-span-2">
+                <img src="img/gallery/7.jpg" alt="">
+            </div>
+            <div class="col-span-2 md:col-span-1">
+                <img src="img/gallery/8.jpg" alt="">
+            </div>
+            <div class="col-span-2 row-span-2 md:col-start-3 xl:row-span-2 xl:col-span-2">
+                <img src="img/gallery/9.jpg" alt="">
+            </div>
+            <div class="col-span-2 md:col-span-1 md:col-start-2 md:row-start-[-1] xl:col-auto xl:row-auto">
+                <img src="img/gallery/10.jpg" alt="">
+            </div>
+            <div class="col-span-2">
+                <img src="img/gallery/11.jpg" alt="">
+            </div>
+            <div class="col-span-2">
+                <img src="img/gallery/12.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/gallery/13.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/gallery/14.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS AREA -->
+    <section class="bg-[#f7f7f7] py-[50px]">
+        <div class="container mx-auto px-[15px]">
+            <div class="grid grid-cols-2 justify-center sm:grid-cols-3 md:grid-cols-5 gap-5 [&>div]:flex [&>div]:justify-center [&>div]:items-center">
+                <div>
+                    <img src="img/logo-1.png" alt="">
+                </div>
+                <div>
+                    <img src="img/logo-2.png" alt="">
+                </div>
+                <div>
+                    <img src="img/logo-3.png" alt="">
+                </div>
+                <div>
+                    <img src="img/logo-4.png" alt="">
+                </div>
+                <div>
+                    <img src="img/logo-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER TOP AREA -->
+    <section class="py-16">
+        <div class="container mx-auto px-[15px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 [&>div>h5]:text-xl [&>div>h5]:font-semibold [&>div>h5]:pb-5">
+                <div>
+                    <a href="#" class="text-3xl font-semibold text-black">Edu<span class="text-[#19c880]">ca</span></a>
+                    <p class="text-sm py-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.</p>
+                    <p class="text-sm text-[#c0c1cd]">Copyright ©2025 all right reserved | This template is made with love By <a href="yeasinarafat.rf.gd" class="text-black underline hover:no-underline">Yeasin Arafat</a></p>
+                </div>
+                <div>
+                    <h5>Contact Us</h5>
+                    <ul class="[&>li]:text-sm [&>li]:pb-4 [&>li>a]:hover:underline">
+                        <li>Email :
+                            <a href="mailtoL:yeasin108arafat@gmail.com">yeasin108arafat@gmail.com</a>
+                        </li>
+                        <li>Phone: <a href="telto:8801636439612">+880 1636439612</a></li>
+                        <li>Address : Phulbari, Dinajpur, Bangladesh</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Quike Links</h5>
+                    <div class="grid grid-cols-2 gap-5">
+                        <ul class="[&>li]:text-sm [&>li]:pb-4 [&>li>a]:hover:underline">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <ul class="[&>li]:text-sm [&>li]:pb-4 [&>li>a]:hover:underline">
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Corums</a></li>
+                            <li><a href="#">Language</a></li>
+                            <li><a href="#">Relese Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h5>Follow Us</h5>
+                    <ul class="flex [&>li>a]:flex [&>li>a]:items-center [&>li>a]:justify-center [&>li>a]:rounded-full [&>li>a]:w-10 [&>li>a]:h-10 [&>li>a]:text-white gap-3 [&>li>a]:transition [&>li>a]:duration-300 [&>li>a]:hover:rotate-360">
+                        <li><a href="#" class="bg-[#4b6cd0]"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="bg-amber-500"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#" class="bg-red-400"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" class="bg-pink-300"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER BOTTOM AREA -->
+    <section class="py-5 border-t-1 border-[#ebebeb]">
+        <div class="container mx-auto px-[15px]">
+            <div class="flex items-center justify-between [&>ul]:flex flex-wrap [& li>a]:text-sm">
+                <ul class="gap-3">
+                    <li>
+                        <a href="#">
+                            <img src="img/play-store.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/app-store.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="gap-10 [&>li>a]:hover:underline [&>li>a]:text-sm">
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Hi</a></li>
+                    <li><a href="#">Bye</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.menu-open-button').click(function(){
+                $('.menu').addClass('open-menu');
+            });
+            $('.menu-close-button').click(function(){
+                $('.menu').removeClass('open-menu');
+            });
+        });
+
+        var mixer = mixitup(".all-catagorys");
+
+
+    </script>
+
+</body>
+</html>

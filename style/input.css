@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+}
+.menu.open-menu{
+    left: 0%;
+}
+.mixitup-control-active {
+    color: #f3a90b;
+    font-weight: 600;
+    border-bottom: 2px solid #f3a90b;
+}
+
