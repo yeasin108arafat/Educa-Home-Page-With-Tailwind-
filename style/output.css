@@ -432,8 +432,14 @@
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
     }
   }
+  .bg-\[url\(\.\/img\/hero-bg\.jpg\)\] {
+    background-image: url(./img/hero-bg.jpg);
+  }
   .bg-\[url\(\/img\/hero-bg\.jpg\)\] {
     background-image: url(/img/hero-bg.jpg);
+  }
+  .bg-\[url\(img\/hero-bg\.jpg\)\] {
+    background-image: url(img/hero-bg.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -761,6 +767,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
     }
   }
   .md\:inline-block {
